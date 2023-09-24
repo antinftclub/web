@@ -1,0 +1,96 @@
+body {
+    background-color: #50514F;
+}
+
+h1 {
+    color: #FFE066;
+    text-align: center;
+    font-size: 42px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+h2 {
+    color: #F25F5C;
+    text-align: center;
+    font-size: 32px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.ownprice {
+    color: #F25F5C;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.owner {
+    font-size: 32px;
+    color: #FFE066;
+}
+
+.price {
+    font-size: 32px;
+    color: #FFE066;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+.nft-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nft {
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.nft-link {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nft img {
+    width: 69%;
+    height: auto;
+}
+
+.nft h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style the image on the individual NFT page */
+.nftmainimg {
+    width: 75%; /* Set the default image width to 75% */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+    transition: width 0.3s; /* Add a smooth transition effect */
+}
+
+/* Define a class for the smaller image size */
+.small-image {
+    width: 25%; /* Set the smaller image width to 25% */
+}
+

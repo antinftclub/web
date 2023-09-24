@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-NFT Club</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>CryptoBro</h1>
+    </header>
+
+    <main>
+        <section class="nft-details">
+            <img src="../imgs/ccMIQJOw47VGkqmXgFK5--1--7pnxu.png" class="nftmainimg small-image" id="nftImage">
+            <h2>Average CryptoBro</h2>
+            <p class="description">"Bro just buy bitcoin it wont make you brok..."</p>
+            <p class="owner">Owner: <span class="ownprice">FullySickFullyBroke</span></p>
+            <p class="price">Price: <span class="ownprice">-14 ETH</span></p>
+            <button class="buy-button" onclick="showError()">Buy Now</button>
+            <p id="error-message" class="error-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Anti-NFT Club</p>
+    </footer>
+
+    <script>
+        function showError() {
+            const errorMessage = document.getElementById("error-message");
+            errorMessage.textContent = "Error: This NFT cannot be bought. It's too valuable!";
+        }
+    </script>
+    <script>
+        // Function to toggle the image size
+        function toggleImageSize() {
+            const nftImage = document.getElementById("nftImage");
+            nftImage.classList.toggle("small-image"); // Toggle the "small-image" class
+        }
+    
+        // Add a click event listener to the image
+        document.getElementById("nftImage").addEventListener("click", toggleImageSize);
+    </script>
+</body>
+</html>
